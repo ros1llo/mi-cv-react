@@ -1,0 +1,79 @@
+{
+  "personal": {
+    "name": "Álvaro Rosillo Olmedo",
+    "role": "Desarrollador Web",
+    "city": "Valencia, España",
+    "email": "a.rosolmedo@gmail.com",
+    "phone": "699 609 480",
+    "photo": "/foto.jpg",
+    "github": "https://github.com/ros1llo",
+    "linkedin": "https://linkedin.com/in/álvaro-rosillo-olmedo-909b76386"
+  },
+  "about": "COMPLETAR: 3-4 líneas. Quién eres, qué estudias, qué te gusta hacer y qué buscas.",
+  "experience": [
+    {
+      "id": 1,
+      "company": "Seggno",
+      "position": "Co-fundador · Desarrollador web",
+      "start": "COMPLETAR",
+      "end": "Actualidad",
+      "description": "Diseño y desarrollo de webs para negocios locales de Valencia. Posicionamiento SEO local y trato directo con clientes."
+    },
+    {
+      "id": 2,
+      "company": "SEO Fintech Lab",
+      "position": "Prácticas · SEO y desarrollo web",
+      "start": "COMPLETAR",
+      "end": "COMPLETAR",
+      "description": "COMPLETAR: qué hiciste allí en 1-2 líneas."
+    }
+  ],
+  "education": [
+    {
+      "id": 1,
+      "title": "CFGS Desarrollo de Aplicaciones Web",
+      "center": "Digitech Progresa",
+      "start": "COMPLETAR",
+      "end": "En curso"
+    }
+  ],
+  "skills": [
+    { "name": "HTML", "level": 85 },
+    { "name": "CSS", "level": 80 },
+    { "name": "JavaScript", "level": 65 },
+    { "name": "React", "level": 55 },
+    { "name": "Java", "level": 55 },
+    { "name": "SQL", "level": 60 },
+    { "name": "Git · GitHub", "level": 70 }
+  ],
+  "languages": [
+    { "language": "Español", "level": "Nativo" },
+    { "language": "Inglés", "level": "COMPLETAR (ej: B2)" }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "name": "Monalisa Il Bistrot",
+      "type": "Web de negocio local",
+      "description": "Web para restaurante italiano en Valencia con formulario de reservas y galería.",
+      "tags": ["React", "CSS", "JS"],
+      "url": "https://monalisa-bistrot.vercel.app/"
+    },
+    {
+      "id": 2,
+      "name": "La Orda",
+      "type": "Web de negocio local",
+      "description": "Web para tienda de Valencia con catálogo, galería y ubicación.",
+      "tags": ["React", "CSS", "JS"],
+      "url": "https://la-orda-demo2801.vercel.app/"
+    },
+    {
+      "id": 3,
+      "name": "FisioVida",
+      "type": "Clínica de fisioterapia",
+      "description": "Web de 5 páginas con formulario de reservas validado con JavaScript.",
+      "tags": ["HTML", "CSS", "JS"],
+      "url": "https://github.com/ros1llo/clinica-fisioterapia"
+    }
+  ]
+}
