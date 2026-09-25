@@ -6,6 +6,8 @@ import Education from "./components/Education";
 import Languages from "./components/Languages.jsx";
 import Footer from "./components/Footer";
 import "./App.css";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
 
 function App() {
   return (
@@ -18,8 +20,10 @@ function App() {
           <main>
             <Experience items={cv.experience} />
             <Education items={cv.education} />
+            <Projects items={cv.projects} />
           </main>
           <aside>
+            <Skills items={cv.skills} />
             <Languages items={cv.languages} />
           </aside>
         </div>

@@ -37,7 +37,6 @@
 h1, h2, h3 { font-family: var(--serif); font-weight: 400; line-height: 1.1; }
 em, .accent { color: var(--accent); font-style: italic; }
 
-/* ===== SECCIONES ===== */
 .section { padding: 4rem 0; border-top: 1px solid var(--border); }
 
 .section-label {
@@ -49,7 +48,6 @@ em, .accent { color: var(--accent); font-style: italic; }
 
 .section-title { font-size: 2.5rem; margin-bottom: 1.5rem; }
 
-/* ===== HEADER ===== */
 .header {
   display: flex;
   align-items: center;
@@ -92,7 +90,6 @@ em, .accent { color: var(--accent); font-style: italic; }
   border-bottom: 1px solid var(--accent);
 }
 
-/* ===== ABOUT ===== */
 .about-text { max-width: 700px; font-size: 1.1rem; color: var(--muted); }
 
 .footer {
@@ -110,7 +107,7 @@ em, .accent { color: var(--accent); font-style: italic; }
   gap: 1rem;
 }
 
-/* ===== LAYOUT DOS COLUMNAS ===== */
+
 .cv-grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -181,8 +178,67 @@ em, .accent { color: var(--accent); font-style: italic; }
   border-radius: 3px;
 }
 
+/* ===== BOTONES ===== */
+.btn {
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  padding: 0.75rem 1.5rem;
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
 
-/* ===== MÓVIL ===== */
+.btn:hover { background: var(--accent); color: var(--bg); }
+
+/* ===== PROYECTOS ===== */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.5rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.project-card:hover { border-color: var(--accent); transform: translateY(-4px); }
+
+.project-type { font-family: var(--mono); font-size: 0.75rem; color: var(--accent); }
+.project-card h3 { font-size: 1.5rem; }
+.project-card > p:not(.project-type) { color: var(--muted); font-size: 0.95rem; flex: 1; }
+
+.project-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.project-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+
+.project-tags li {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  padding: 0.2rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--muted);
+}
+
+.project-footer a { font-family: var(--mono); font-size: 0.85rem; color: var(--accent); white-space: nowrap; }
+
+
 @media (max-width: 768px) {
   .header { flex-direction: column; text-align: center; padding-top: 3rem; }
   .header-info h1 { font-size: 2.5rem; }
