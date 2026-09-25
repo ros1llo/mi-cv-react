@@ -1,17 +1,26 @@
+import { useState } from "react";
 import cv from "./data/cv.json";
+import ThemeToggle from "./components/ThemeToggle";
 import Header from "./components/Header";
 import About from "./components/About";
 import Experience from "./components/Experience";
 import Education from "./components/Education";
-import Languages from "./components/Languages.jsx";
+import Projects from "./components/Projects";
+import Skills from "./components/Skills";
+import Languages from "./components/Languages";
 import Footer from "./components/Footer";
 import "./App.css";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
 
 function App() {
+  const [darkMode, setDarkMode] = useState(true);
+
   return (
-    <div className="app dark">
+    <div className={darkMode ? "app dark" : "app"}>
+      <ThemeToggle
+        darkMode={darkMode}
+        onToggle={() => setDarkMode(!darkMode)}
+      />
+
       <div className="container">
         <Header personal={cv.personal} />
         <About text={cv.about} />
@@ -28,6 +37,7 @@ function App() {
           </aside>
         </div>
       </div>
+
       <Footer name={cv.personal.name} />
     </div>
   );

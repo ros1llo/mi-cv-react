@@ -239,6 +239,25 @@ em, .accent { color: var(--accent); font-style: italic; }
 .project-footer a { font-family: var(--mono); font-size: 0.85rem; color: var(--accent); white-space: nowrap; }
 
 
+/* ===== BOTÓN TEMA ===== */
+.theme-toggle {
+  position: fixed;
+  top: 1.25rem;
+  right: 1.25rem;
+  z-index: 100;
+  width: 44px;
+  height: 44px;
+  font-size: 1.2rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.theme-toggle:hover { border-color: var(--accent); transform: rotate(20deg); }
+
+
 @media (max-width: 768px) {
   .header { flex-direction: column; text-align: center; padding-top: 3rem; }
   .header-info h1 { font-size: 2.5rem; }
