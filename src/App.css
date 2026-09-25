@@ -156,6 +156,32 @@ em, .accent { color: var(--accent); font-style: italic; }
 
 .languages-level { font-family: var(--mono); font-size: 0.85rem; color: var(--accent); }
 
+/* ===== SKILLS ===== */
+.skills { display: flex; flex-direction: column; gap: 1.25rem; }
+
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+}
+
+.skill-level { font-family: var(--mono); font-size: 0.8rem; color: var(--muted); }
+
+.progress {
+  height: 6px;
+  background: var(--card);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 3px;
+}
+
+
 /* ===== MÓVIL ===== */
 @media (max-width: 768px) {
   .header { flex-direction: column; text-align: center; padding-top: 3rem; }

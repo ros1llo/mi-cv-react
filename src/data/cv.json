@@ -9,13 +9,13 @@
     "github": "https://github.com/ros1llo",
     "linkedin": "https://linkedin.com/in/álvaro-rosillo-olmedo-909b76386"
   },
-  "about": "COMPLETAR: 3-4 líneas. Quién eres, qué estudias, qué te gusta hacer y qué buscas.",
+  "about": "COMPLETAR: sobre mi",
   "experience": [
     {
       "id": 1,
       "company": "Seggno",
-      "position": "Co-fundador · Desarrollador web",
-      "start": "COMPLETAR",
+      "position": "Fundador · Desarrollador web",
+      "start": "2026",
       "end": "Actualidad",
       "description": "Diseño y desarrollo de webs para negocios locales de Valencia. Posicionamiento SEO local y trato directo con clientes."
     },
@@ -23,8 +23,7 @@
       "id": 2,
       "company": "SEO Fintech Lab",
       "position": "Prácticas · SEO y desarrollo web",
-      "start": "COMPLETAR",
-      "end": "COMPLETAR",
+      "start": "2026",
       "description": "COMPLETAR: qué hiciste allí en 1-2 líneas."
     }
   ],
@@ -33,7 +32,7 @@
       "id": 1,
       "title": "CFGS Desarrollo de Aplicaciones Web",
       "center": "Digitech Progresa",
-      "start": "COMPLETAR",
+      "start": "2025",
       "end": "En curso"
     }
   ],
@@ -48,7 +47,7 @@
   ],
   "languages": [
     { "language": "Español", "level": "Nativo" },
-    { "language": "Inglés", "level": "COMPLETAR (ej: B2)" }
+    { "language": "Inglés", "level": "B2" }
   ],
   "projects": [
     {
