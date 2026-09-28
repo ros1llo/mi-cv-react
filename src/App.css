@@ -239,7 +239,6 @@ em, .accent { color: var(--accent); font-style: italic; }
 .project-footer a { font-family: var(--mono); font-size: 0.85rem; color: var(--accent); white-space: nowrap; }
 
 
-/* ===== BOTÓN TEMA ===== */
 .theme-toggle {
   position: fixed;
   top: 1.25rem;
