@@ -3,11 +3,7 @@ function Header({ personal }) {
 
   return (
     <header className="header">
-      <img
-        className="header-photo"
-        src={personal.photo}
-        alt={`Foto de ${personal.name}`}
-      />
+      <img className="header-photo" src={personal.photo} alt={`Foto de ${personal.name}`} />
       <div className="header-info">
         <h1>{personal.name}</h1>
         <h2>{personal.role}</h2>
@@ -19,6 +15,7 @@ function Header({ personal }) {
         <div className="header-links">
           <a href={personal.github} target="_blank" rel="noreferrer">GitHub →</a>
           <a href={personal.linkedin} target="_blank" rel="noreferrer">LinkedIn →</a>
+          <button type="button" className="header-pdf" onClick={() => window.print()}>Descargar PDF ↓</button>
         </div>
       </div>
     </header>

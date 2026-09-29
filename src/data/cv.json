@@ -9,22 +9,23 @@
     "github": "https://github.com/ros1llo",
     "linkedin": "https://linkedin.com/in/álvaro-rosillo-olmedo-909b76386"
   },
-  "about": "COMPLETAR: sobre mi",
+    "about": "Estudiante de 2º de DAW y fundador de Seggno, donde diseño y desarrollo webs para negocios locales de Valencia, desde la primera reunión con el cliente hasta la web publicada. Aprendo rápido y me adapto bien a tecnologías nuevas: este año he dado el salto de HTML y CSS a React. El deporte me ha enseñado disciplina y a rendir bajo presión, algo que aplico en cada entrega.",
   "experience": [
     {
       "id": 1,
       "company": "Seggno",
       "position": "Fundador · Desarrollador web",
-      "start": "2026",
+      "start": "Feb 2026",
       "end": "Actualidad",
-      "description": "Diseño y desarrollo de webs para negocios locales de Valencia. Posicionamiento SEO local y trato directo con clientes."
+      "description": "Diseño y desarrollo de webs para negocios locales, con posicionamiento SEO local y trato directo con los clientes. Proyectos como Monalisa Il Bistrot o Bar Comodín."
     },
     {
       "id": 2,
       "company": "SEO Fintech Lab",
-      "position": "Prácticas · SEO y desarrollo web",
-      "start": "2026",
-      "description": "COMPLETAR: qué hiciste allí en 1-2 líneas."
+      "position": "Prácticas · Desarrollo web",
+      "start": "Jun 2026",
+      "end": "",
+      "description": "Colaboré en el desarrollo de la web de una consultora de SEO, aplicando buenas prácticas de posicionamiento."
     }
   ],
   "education": [
@@ -60,6 +61,14 @@
     },
     {
       "id": 2,
+      "name": "Bar Comodín",
+      "type": "Web de negocio local",
+      "description": "Web de una página para un local de espectáculos en Sitges: el show, galería, reseñas de Google y cómo llegar.",
+      "tags": ["Diseño web", "SEO local"],
+      "url": "https://bar-comodin.vercel.app/"
+    },
+    {
+      "id": 3,
       "name": "La Orda",
       "type": "Web de negocio local",
       "description": "Web para tienda de Valencia con catálogo, galería y ubicación.",
@@ -67,7 +76,7 @@
       "url": "https://la-orda-demo2801.vercel.app/"
     },
     {
-      "id": 3,
+      "id": 4,
       "name": "FisioVida",
       "type": "Clínica de fisioterapia",
       "description": "Web de 5 páginas con formulario de reservas validado con JavaScript.",

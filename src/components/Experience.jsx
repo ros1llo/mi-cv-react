@@ -7,7 +7,7 @@ function Experience({ items }) {
       <div className="timeline">
         {items.map((job) => (
           <article key={job.id} className="timeline-item">
-            <span className="timeline-date">{job.start} — {job.end}</span>
+            <span className="timeline-date">{job.start}{job.end && ` — ${job.end}`}</span>
             <h3>{job.position}</h3>
             <p className="timeline-place">{job.company}</p>
             <p>{job.description}</p>

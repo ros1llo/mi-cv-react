@@ -1,17 +1,24 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { flushSync } from "react-dom";
 
 function Projects({ items }) {
   const [showProjects, setShowProjects] = useState(false);
+
+  useEffect(() => {
+    const showForPrint = () => {
+      flushSync(() => setShowProjects(true));
+    };
+
+    window.addEventListener("beforeprint", showForPrint);
+    return () => window.removeEventListener("beforeprint", showForPrint);
+  }, []);
 
   return (
     <section id="proyectos" className="section">
       <p className="section-label">// 06 — proyectos</p>
       <h2 className="section-title">Proyectos <em>destacados.</em></h2>
 
-      <button
-        className="btn"
-        onClick={() => setShowProjects(!showProjects)}
-      >
+      <button className="btn" onClick={() => setShowProjects(!showProjects)}>
         {showProjects ? "Ocultar proyectos" : "Mostrar proyectos"}
       </button>
 
@@ -29,9 +36,7 @@ function Projects({ items }) {
                     <li key={tag}>{tag}</li>
                   ))}
                 </ul>
-                <a href={project.url} target="_blank" rel="noreferrer">
-                  Ver →
-                </a>
+                <a href={project.url} target="_blank" rel="noreferrer">Ver →</a>
               </div>
             </article>
           ))}
